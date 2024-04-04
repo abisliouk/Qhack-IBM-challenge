@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, request, Response
 import requests
 from bs4 import BeautifulSoup
 from langchain_community.document_loaders import PyPDFLoader
@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 
 @app.route("/generate-onboarding", methods=["POST"])
-def add_book():
+def generate_onboarding():
     parameters = request.json
     companyResources = parameters["companyResources"]
     employeeResources = parameters["employeeResources"]
@@ -115,7 +115,7 @@ def add_book():
     )
 
     employee_name = "Peter"
-    position = "Data Scientist"
+    position = "Machine Learning Professor"
     department = "Data Science department"
 
     query = f"""Generate personalized onboarding material for {employee_name}, who is starting as a {position} in the {department}. 
@@ -138,8 +138,9 @@ def add_book():
 
     # Now you can parse the JSON string
     json_data = json.loads(json_string)
+    response = Response(response=json_data, status=200, mimetype="application/json")
 
-    return json_data, 201
+    return response
 
 
 if __name__ == "__main__":
