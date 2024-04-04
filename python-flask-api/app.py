@@ -118,7 +118,7 @@ def add_book():
     position = "Data Scientist"
     department = "Data Science department"
 
-    query = f"""Generate personalized onboarding material for {employee_name}, who is starting as a {position} in the {department}. Here are some additional requirements: {requirements[0]}
+    query = f"""Generate personalized onboarding material for {employee_name}, who is starting as a {position} in the {department}. 
     Return the result in form of a JSON file. The structure of the JSON file should follow multiple steps of the following format. Please include valid links from the to useful resources for every step: 
     "step": "1",
     "title": "",
@@ -128,7 +128,7 @@ def add_book():
     "",
     "",
     ]
-
+    Here are some additional requirements: {requirements}
     """
 
     output = qa.run(query)
