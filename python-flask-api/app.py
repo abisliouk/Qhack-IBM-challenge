@@ -24,21 +24,21 @@ def generate_onboarding():
 
     extracted_content = []
 
-    urls = companyResources + employeeResources
+    # urls = companyResources + employeeResources
 
-    # urls = [
-    #     "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/infos-fuer-neue-mitarbeitende/",
-    #     "https://www.uni-mannheim.de/en/campus/mannheim/",
-    #     "https://www.uni-mannheim.de/en/about/map-and-directions/",
-    #     "https://www.uni-mannheim.de/en/about/profile/",
-    #     "https://www.uni-mannheim.de/en/gender-equality-and-equal-opportunity/equal-opportunity-commissioners/department-of-equal-opportunity-and-social-diversity/",
-    #     "https://www.uni-mannheim.de/en/representative-for-employees-with-a-disability/",
-    #     "https://www.uni-mannheim.de/en/gender-equality-and-equal-opportunity/equal-opportunity-commissioners/equal-opportunity-commissioner/",
-    #     "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/workplace-health-promotion/",
-    #     "https://www.uni-mannheim.de/en/campus/music-theater-and-art/",
-    #     "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/continuing-education-and-training/",
-    #     "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/benefits/",
-    # ]
+    urls = [
+        "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/infos-fuer-neue-mitarbeitende/",
+        "https://www.uni-mannheim.de/en/campus/mannheim/",
+        "https://www.uni-mannheim.de/en/about/map-and-directions/",
+        "https://www.uni-mannheim.de/en/about/profile/",
+        "https://www.uni-mannheim.de/en/gender-equality-and-equal-opportunity/equal-opportunity-commissioners/department-of-equal-opportunity-and-social-diversity/",
+        "https://www.uni-mannheim.de/en/representative-for-employees-with-a-disability/",
+        "https://www.uni-mannheim.de/en/gender-equality-and-equal-opportunity/equal-opportunity-commissioners/equal-opportunity-commissioner/",
+        "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/workplace-health-promotion/",
+        "https://www.uni-mannheim.de/en/campus/music-theater-and-art/",
+        "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/continuing-education-and-training/",
+        "https://www.uni-mannheim.de/en/about/working-at-the-university-of-mannheim/benefits/",
+    ]
 
     for url in urls:
         # Step 1: Fetch HTML Content
@@ -114,8 +114,8 @@ def generate_onboarding():
         retriever=docstorage.as_retriever(),
     )
 
-    employee_name = "Peter"
-    position = "Machine Learning"
+    employee_name = "Hannes"
+    position = "office worker"
     department = "Data Science department"
 
     query = f"""Generate personalized onboarding material for {employee_name}, who is starting as a {position} in the {department}. 
