@@ -1,0 +1,54 @@
+{
+  "onboarding_steps": [
+    {
+      "step": "1",
+      "title": "Welcome to the University of Mannheim!",
+      "description": "We are excited to have you join our team as a Machine Learning Professor in the Data Science department. This onboarding material will guide you through the necessary steps to get started.",
+      "links": [],
+      "tasks": [
+        "Read the welcome message from the Department of Equal Opportunity and Social Diversity.",
+        "Familiarize yourself with the location of your office (B 6, 30\u201332 \u2013 Room 013) and the contact information of Natalie Rose, the contact person for the Department of Equal Opportunity and Social Diversity.",
+        "Contact Natalie Rose (Phone: +49 621 181-2534, E-mail: natalie.embach-deegmail-uni-mannheim.de) to introduce yourself and schedule a meeting to discuss any questions or concerns you may have."
+      ]
+    },
+    {
+      "step": "2",
+      "title": "Important Information for New Staff Members",
+      "description": "As a new staff member, it is important to familiarize yourself with the policies and procedures of the University of Mannheim. This will ensure a smooth transition into your role.",
+      "links": [
+        "https://www.uni-mannheim.de/en/about/organization/central-university-administration/human-resources/",
+        "https://www.uni-mannheim.de/en/about/organization/central-university-administration/human-resources/employment-conditions/"
+      ],
+      "tasks": [
+        "Review the information provided on the University of Mannheim's Human Resources website.",
+        "Read the employment conditions and benefits for staff members."
+      ]
+    },
+    {
+      "step": "3",
+      "title": "Department-specific Information",
+      "description": "As a Machine Learning Professor in the Data Science department, there are specific resources and information that will be relevant to your role.",
+      "links": [
+        "https://www.uni-mannheim.de/en/academics/programs/master/data-science/",
+        "https://www.uni-mannheim.de/en/academics/programs/master/data-science/curriculum/"
+      ],
+      "tasks": [
+        "Explore the Master's program in Data Science offered by the University of Mannheim.",
+        "Review the curriculum and courses offered in the Data Science program."
+      ]
+    },
+    {
+      "step": "4",
+      "title": "Professional Development Opportunities",
+      "description": "At the University of Mannheim, we value continuous learning and professional development. Here are some resources and opportunities available to support your growth.",
+      "links": [
+        "https://www.uni-mannheim.de/en/academics/programs/doctoral-programs/",
+        "https://www.uni-mannheim.de/en/academics/programs/doctoral-programs/data-science/"
+      ],
+      "tasks": [
+        "Explore the doctoral programs offered by the University of Mannheim.",
+        "Consider joining the Data Science doctoral program to further enhance your expertise."
+      ]
+    }
+  ]
+}
