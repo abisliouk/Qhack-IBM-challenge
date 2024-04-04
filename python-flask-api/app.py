@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, jsonify, request
 import requests
 from bs4 import BeautifulSoup
 from langchain_community.document_loaders import PyPDFLoader
@@ -115,19 +115,16 @@ def generate_onboarding():
     )
 
     employee_name = "Peter"
-    position = "Machine Learning Professor"
+    position = "Machine Learning"
     department = "Data Science department"
 
     query = f"""Generate personalized onboarding material for {employee_name}, who is starting as a {position} in the {department}. 
-    Return the result in form of a JSON file. The structure of the JSON file should follow multiple steps of the following format. Please include valid links from the to useful resources for every step: 
+    Return the result in form of a JSON file. Its very important to include fitting tasks and valid URL links to useful resources for every step. The description should be very detailed. Return the json objects as an array with the following format: 
     "step": "1",
     "title": "",
     "description": "",
-    "links": [""],
-    "tasks": [
-    "",
-    "",
-    ]
+    "links": ["",""],
+    "tasks": ["",""]
     Here are some additional requirements: {requirements}
     """
 
@@ -138,9 +135,8 @@ def generate_onboarding():
 
     # Now you can parse the JSON string
     json_data = json.loads(json_string)
-    response = Response(response=json_data, status=200, mimetype="application/json")
 
-    return response
+    return json_data, 201
 
 
 if __name__ == "__main__":
