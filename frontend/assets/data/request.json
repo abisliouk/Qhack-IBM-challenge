@@ -1,0 +1,11 @@
+{
+  "companyResources": [
+    "https://www.uni-mannheim.de/studium/im-studium/pruefungen/pruefung-ablegen/pruefungstermine/",
+    "https://www.uni-mannheim.de/it/support/speedtest/"
+  ],
+  "employeeResources": ["https://www.uni-mannheim.de/it/support/speedtest/"],
+  "requirements": [
+    "Include a showcase of employees",
+    "Make sure web skills like HTML, CSS and Javascript are covered"
+  ]
+}
