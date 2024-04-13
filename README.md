@@ -1,5 +1,5 @@
 ![image](https://github.com/abisliouk/Qhackathon2024-IBM-challenge/assets/101648535/75b4cc71-a567-4497-add1-aed065f6794c)
-# Qhack-IBM-challenge
+# Team & Solution
 
 **Team**
 - Nico Sharei
