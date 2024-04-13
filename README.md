@@ -1,18 +1,23 @@
 ![image](https://github.com/abisliouk/Qhackathon2024-IBM-challenge/assets/101648535/75b4cc71-a567-4497-add1-aed065f6794c)
 # Team & OnboardingAI
 
-**Team**
+## Team
 - Nico Sharei
 - Kiduk Kang
 - Artem Bisliouk
 - Marc Becker
 - Ludwig Fügner
 
-**Solution**
+## Solution
 
 Thanks to the great teamwork I am proud to report that we were able to implement **OnboardingAI** in 24 hours.
 
 **OnboardingAI** is a service that generates a personalized step-by-step onboarding process using LLMs together with Retrieval Augmented Generation based on company, employee and specific management requirements.
+
+## Project structure
+- [Presentation](https://github.com/abisliouk/Qhackathon2024-IBM-challenge/blob/main/OnboardAI.pptx) of OnboardingAI
+- [Frontend](https://github.com/abisliouk/Qhackathon2024-IBM-challenge/tree/main/frontend) (Flutter web client)
+- [Backend](https://github.com/abisliouk/Qhackathon2024-IBM-challenge/tree/main/backend)(Flask. LLM + RAG)
 
 # Challenge Source
 Original source: https://github.com/Q-hackathon/IBM_Q-Hack2024?tab=readme-ov-file
