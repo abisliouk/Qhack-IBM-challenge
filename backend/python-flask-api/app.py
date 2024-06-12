@@ -8,10 +8,16 @@ from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI
 import json
+from flask_cors import CORS
+
 
 
 app = Flask(__name__)
+CORS(app)
 
+@app.route("/hello", methods=["GET"])
+def hello():
+    return "Hello, World!"
 
 @app.route("/generate-onboarding", methods=["POST"])
 def generate_onboarding():
